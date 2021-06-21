@@ -1,0 +1,73 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #fef9f8;
+}
+
+.content-container {
+  margin: 0 auto;
+  width: 80%;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+
+.title {
+  font-weight: 200;
+  font-size: 3rem;
+  color:#333;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.converter {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 0 5rem 0;
+}
+
+.currencyTitle {
+  color:#333;
+  display: inline-flex;
+  font-weight: 500;
+  font-size: 1.6rem;
+  padding-left: .6rem;
+  padding-top: .6rem;
+  margin: auto;
+}
+
+.form select, input {
+  height: 3rem;
+  width: 15rem;
+  background-color: #ef9273;
+  border: 2px solid #222;
+  color: rgb(29, 28, 28);
+  border-radius: 0;
+}
+
+.form select:hover, .form input:hover {
+  border: 2px solid #666
+}
+
+@media only screen and (max-width: 1200px) {
+  .content-container {
+    width: 100%;
+  }
+
+  .converter {
+    flex-wrap: wrap;
+  }
+
+  .form select, input {
+    margin: 0.3rem 0;
+  }
+}

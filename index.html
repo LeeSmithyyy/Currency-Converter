@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="converter.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="content-container">
+      <h1 class="title">Currency Converter</h1>
+      <form class="form">
+
+        <div class="converter">
+          <div class="amount">
+            <input type="text" id="amount" placeholder="Enter Amount in EUR">
+            <p class="currencyTitle">Euro</p>
+            <!--<select id="base" name="base">
+          <option disabled value="select" selected>Select Start Currency</option>
+        </select> -->
+          </div>
+
+          <div class="currency">
+            <select id="currency" name="currency">
+              <option disabled value="select" selected>Select Currency</option>
+            </select>
+          </div>
+
+          <div class="result">
+            <input type="text" id="converted" readonly>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+  <script src="converter.js"></script>
+
+</body>
+
+</html>
